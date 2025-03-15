@@ -1,0 +1,149 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf6fc; 
+    color: #333333; 
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #ffffff;
+    padding: 20px 40px; 
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Courier New', monospace; 
+    border-bottom: 2px solid #ccc; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+header h1 {
+    color: #22577a; 
+    font-size: 28px; 
+    margin: 0;
+    letter-spacing: 1px; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #22577a; 
+    text-decoration: none;
+    font-size: 16px; 
+    padding: 10px 20px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #ffffff; 
+    background-color: #38a3a5; 
+    text-shadow: none; 
+    border-color: #38a3a5;
+}
+
+
+div.form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #c8eafa; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    font-size: 1.1em;
+    color: #333333;  
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 8px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #38a3a5;  
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1b4965;  
+}
+
+footer {
+    background-color: rgb(36, 86, 103);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+}
+
+footer p {
+    margin: 0;
+}
+
+ 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div.form {
+        margin: 10px;
+        padding: 15px;
+    }
+}
